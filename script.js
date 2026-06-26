@@ -259,7 +259,9 @@ document.addEventListener("DOMContentLoaded", () => {
         },
         body: new URLSearchParams(new FormData(form)).toString(),
       });
-
+      console.log("URL", URLSearchParams);
+      console.log("RES", response);
+      console.log("OK", response.ok);
       if (response.ok) {
         formSuccess.classList.add("is-visible");
         form.reset();
